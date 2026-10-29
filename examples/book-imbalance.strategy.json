@@ -1,0 +1,41 @@
+{
+  "config": {
+    "common": {
+      "decision_seconds_before_close": 180,
+      "execution_delay_seconds": 0.1,
+      "max_decision_gap_seconds": 5.0,
+      "max_price": 0.99,
+      "max_quote_age_seconds": 2.0,
+      "max_spread": 0.1,
+      "min_edge": 0.03,
+      "min_price": 0.01,
+      "minimum_executable_shares": 1.0,
+      "monte_carlo_paths": 500,
+      "monte_carlo_step_seconds": 1.0,
+      "predictor_price_source": "median_composite",
+      "safety_margin": 0.0,
+      "seed_version": 1,
+      "settlement_model_type": "twap_monte_carlo",
+      "shares": 5.0,
+      "signal_integration_mode": "logit_adjustment",
+      "slippage_limit": 0.02,
+      "volatility_cap": 0.02,
+      "volatility_floor": 1e-08,
+      "volatility_lookback_seconds": 60,
+      "volatility_model": "realized_std"
+    },
+    "params": {
+      "depth_band": 0.02,
+      "minimum_direction_score": 0.3,
+      "minimum_total_depth": 10.0,
+      "signal_weight_beta": 0.35
+    },
+    "strategy_family": "fair_value_book_imbalance"
+  },
+  "config_sha256": "5f28c544dc1d95f1d788ff2ee6be04c6341d0e28ce096ab34c8c9bdb9e317287",
+  "frozen": true,
+  "name": "S5_BASE_H180_BOOK_IMBALANCE",
+  "profile_policy_revision": "phase595_shadow_strategy_profiles_v1",
+  "revision": 1,
+  "strategy_id": "BUILTIN_S5_BASE_H180_BOOK_IMBALANCE"
+}

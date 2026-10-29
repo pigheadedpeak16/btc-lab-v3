@@ -1,0 +1,41 @@
+# Local observations and experiment history are never source assets.
+data/
+research/
+replay_runs/
+source_checkpoints/
+*_evidence/
+logs/
+.local-lab/
+.demo/
+replay-demo-report*.json
+replay-*-report.json
+# Local continuity/audit documents are not public release assets.
+BTC_LAB_V3_*.md
+STAGE*_POLICY.md
+STAGES*_REPORT.md
+ENGINEERING_COMPLETION_REPORT.md
+LAB_PRODUCT_CLEANUP_REPORT.md
+PHASE*_REPAIR_REPORT.md
+SUPERVISED_CAPTURE_REVIEW.md
+*.sqlite
+*.sqlite-*
+*.db
+*.zip
+*.jsonl.gz
+# Credentials and machine-local environments
+.env
+.env.*
+*.pem
+*.key
+*.pfx
+*.p12
+*.secrets.*
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/

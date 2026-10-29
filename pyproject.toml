@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "btc-lab-v3"
+version = "0.5.9.5"
+description = "BTC/Polymarket 5-minute research and forward paper-trading laboratory"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "httpx[http2]>=0.28,<1",
+    "pydantic>=2.10,<3",
+    "websockets>=14,<16",
+    "polymarket-client>=0.11,<1",
+    "numpy>=2,<3",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3,<9",
+]
+
+[tool.setuptools.packages.find]
+include = ["btc_v3*"]
+
+[project.urls]
+Homepage = "https://pigheadedpeak16.github.io/btc-lab-v3/"
+Repository = "https://github.com/pigheadedpeak16/btc-lab-v3"
+Documentation = "https://pigheadedpeak16.github.io/btc-lab-v3/#quickstart"
+Issues = "https://github.com/pigheadedpeak16/btc-lab-v3/issues"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
